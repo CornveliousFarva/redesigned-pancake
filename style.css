@@ -12,4 +12,26 @@ body{
     align-items: center;
     overflow: hidden;
     height: 100vh;
+    background-color: coral;
+}
+
+div{
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+input{
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: coral;
+    border: none;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
 }
