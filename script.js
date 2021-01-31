@@ -3,7 +3,7 @@ const speedEl = document.getElementById('speed')
 const text = 'Wubba Lubba Dub-Dub!'
 
 let idx = 1
-let speed = 300 / speedEl.nodeValue
+let speed = 300 / speedEl.value
 
 writeText()
 
@@ -12,11 +12,12 @@ function writeText() {
 
     idx++
 
-    if(idx > text.length){
+    if(idx > text.length) {
         idx = 1
     }
 
     setTimeout(writeText, speed)
 }
+
 
 speedEl.addEventListener('input', (e) => speed = 300 / e.target.value)
